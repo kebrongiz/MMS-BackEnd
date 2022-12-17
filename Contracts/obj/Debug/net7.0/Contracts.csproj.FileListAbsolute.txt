@@ -1,0 +1,15 @@
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\bin\Debug\net7.0\Contracts.deps.json
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\bin\Debug\net7.0\Contracts.dll
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\bin\Debug\net7.0\Contracts.pdb
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\bin\Debug\net7.0\DataModels.dll
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\bin\Debug\net7.0\DataModels.pdb
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfo.cs
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.csproj.CopyComplete
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.dll
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\refint\Contracts.dll
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\Contracts.pdb
+C:\Users\Kebron\Music\MMS-BackEnd\Contracts\obj\Debug\net7.0\ref\Contracts.dll
