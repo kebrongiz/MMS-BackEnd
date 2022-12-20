@@ -1,15 +1,10 @@
 ﻿using Contracts;
 using DataModels;
 using DataModels.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure
 {
-   public class EmployeeRepository:IEmployee
+    public class EmployeeRepository : IEmployee
     {
         private readonly InventoryDbContext _dbContext;
         public EmployeeRepository(InventoryDbContext dbContext)
@@ -26,7 +21,7 @@ namespace Infrastructure
 
         public List<Employee> GetAll()
         {
-             return _dbContext.Employees.ToList();
+            return _dbContext.Employees.ToList();
         }
     }
 }

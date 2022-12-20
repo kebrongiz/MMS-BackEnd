@@ -1,16 +1,19 @@
 using Contracts;
 using DataModels;
 using Infrastructure;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
+using MMS_BackEnd.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<InventoryDbContext>(Options =>
      Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddScoped(typeof(DbContext),typeof(InventoryDbContext));
+builder.Services.AddScoped(typeof(DbContext), typeof(InventoryDbContext));
 builder.Services.AddScoped(typeof(IEmployee), typeof(EmployeeRepository));
-builder.Services.AddScoped(typeof(IInventory),typeof(InventoryRepository));
+builder.Services.AddScoped(typeof(IMaterialItem), typeof(MaterialItemRepository));
+builder.Services.ConfigureCors();
 
 
 builder.Services.AddControllers();
@@ -26,7 +29,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.All
+});
 
+// Enable middleware to serve generated Swagger as a JSON endpoint.
+app.UseSwagger();
+app.UseResponseCaching();
+app.UseCors("AllowAllOrigins");
+app.UseHttpsRedirection();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

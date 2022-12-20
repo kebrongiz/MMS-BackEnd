@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\DataModels.csproj": {}
+    "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\DataModels.csproj": {
+    "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\DataModels.csproj",
+        "projectUniqueName": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj",
         "projectName": "DataModels",
-        "projectPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\DataModels.csproj",
-        "packagesPath": "C:\\Users\\Kebron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\obj\\",
+        "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj",
+        "packagesPath": "C:\\Users\\yesuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kebron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yesuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -3198,19 +3198,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kebron\\.nuget\\packages\\": {}
+    "C:\\Users\\yesuf\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Contracts\\Contracts.csproj",
-      "packagesPath": "C:\\Users\\Kebron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Contracts\\obj\\",
+      "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\Contracts.csproj",
+      "packagesPath": "C:\\Users\\yesuf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kebron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yesuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3224,8 +3224,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\DataModels.csproj": {
-              "projectPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\DataModel\\DataModels.csproj"
+            "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj": {
+              "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj"
             }
           }
         }

@@ -19,7 +19,12 @@ namespace MMS_BackEnd.Controllers
         {
 
             return _employeeService.Create(employee);
-                                                            
+
+        }
+        [HttpGet]
+        public List<Employee> GetEmployees()
+        {
+            return _employeeService.GetAll();
         }
     }
 }

@@ -27,31 +27,32 @@ namespace DataModels.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("employeId");
+                        .HasColumnName("employeeId");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<DateTimeOffset>("date")
+                    b.Property<DateTimeOffset?>("Date")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<string>("Gender")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("department")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("firstName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("gender")
-                        .IsRequired()
+                    b.Property<string>("fpNumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("lastName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("middleName")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("rank")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
@@ -59,56 +60,86 @@ namespace DataModels.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("DataModels.Entity.Inventory", b =>
+            modelBuilder.Entity("DataModels.Entity.MaterialHeader", b =>
+                {
+                    b.Property<int>("employeeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("attachments")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("shelfNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("storeNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("employeeId");
+
+                    b.ToTable("MaterialHeaders");
+                });
+
+            modelBuilder.Entity("DataModels.Entity.MaterialItem", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("inventoryId");
+                        .HasColumnName("materilItemId");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<int?>("Employeeid")
+                    b.Property<int>("employeeId")
                         .HasColumnType("int");
 
                     b.Property<string>("model")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("quantity")
-                        .HasColumnType("float");
+                    b.Property<int?>("quantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("serial")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("totalPrice")
-                        .HasColumnType("real");
+                    b.Property<int?>("totalPrice")
+                        .HasColumnType("int");
 
                     b.Property<string>("type")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("unitPrice")
-                        .HasColumnType("real");
+                    b.Property<int?>("unitPrice")
+                        .HasColumnType("int");
 
                     b.HasKey("id");
 
-                    b.HasIndex("Employeeid");
+                    b.HasIndex("employeeId");
 
-                    b.ToTable("Inventories");
+                    b.ToTable("MaterialItems");
                 });
 
-            modelBuilder.Entity("DataModels.Entity.Inventory", b =>
+            modelBuilder.Entity("DataModels.Entity.MaterialHeader", b =>
                 {
                     b.HasOne("DataModels.Entity.Employee", null)
-                        .WithMany("Inventories")
-                        .HasForeignKey("Employeeid");
+                        .WithOne("MaterialHeader")
+                        .HasForeignKey("DataModels.Entity.MaterialHeader", "employeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DataModels.Entity.MaterialItem", b =>
+                {
+                    b.HasOne("DataModels.Entity.Employee", null)
+                        .WithMany("MaterialItems")
+                        .HasForeignKey("employeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DataModels.Entity.Employee", b =>
                 {
-                    b.Navigation("Inventories");
+                    b.Navigation("MaterialHeader")
+                        .IsRequired();
+
+                    b.Navigation("MaterialItems");
                 });
 #pragma warning restore 612, 618
         }

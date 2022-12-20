@@ -1270,8 +1270,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Contracts": "1.0.0",
-          "DataModels": "1.0.0"
+          "Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Infrastructure.dll": {}
@@ -3969,19 +3968,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kebron\\.nuget\\packages\\": {}
+    "C:\\Users\\yesuf\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\MMS-BackEnd\\MMS-BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\MMS-BackEnd\\MMS-BackEnd.csproj",
       "projectName": "MMS-BackEnd",
-      "projectPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\MMS-BackEnd\\MMS-BackEnd.csproj",
-      "packagesPath": "C:\\Users\\Kebron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\MMS-BackEnd\\obj\\",
+      "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\MMS-BackEnd\\MMS-BackEnd.csproj",
+      "packagesPath": "C:\\Users\\yesuf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\MMS-BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kebron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yesuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3995,11 +3994,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Contracts\\Contracts.csproj"
+            "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\Contracts.csproj"
             },
-            "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Kebron\\Music\\MMS-BackEnd\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
