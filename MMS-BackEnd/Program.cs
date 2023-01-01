@@ -12,6 +12,7 @@ builder.Services.AddDbContext<InventoryDbContext>(Options =>
      Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped(typeof(DbContext), typeof(InventoryDbContext));
 builder.Services.AddScoped(typeof(IEmployee), typeof(EmployeeRepository));
+builder.Services.AddScoped(typeof(IStoreHeader), typeof(StoreHeaderRepository));
 builder.Services.AddScoped(typeof(IMaterialItem), typeof(MaterialItemRepository));
 builder.Services.ConfigureCors();
 

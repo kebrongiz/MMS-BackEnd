@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MMS_BackEnd.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/materialItems")]
     [ApiController]
     public class MaterialItemsController : ControllerBase
     {

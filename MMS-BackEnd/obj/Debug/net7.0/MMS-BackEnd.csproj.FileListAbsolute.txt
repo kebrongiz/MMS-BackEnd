@@ -146,7 +146,6 @@ C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.AssemblyInfoInputs.cache
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.AssemblyInfo.cs
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.csproj.CoreCompileInputs.cache
-C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\staticwebassets\msbuild.MMS-BackEnd.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\staticwebassets\msbuild.build.MMS-BackEnd.props
@@ -162,3 +161,4 @@ C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.pdb
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.genruntimeconfig.cache
 C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\ref\MMS-BackEnd.dll
+C:\Users\yesuf\Desktop\Project\Backend\MMS-BackEnd\MMS-BackEnd\obj\Debug\net7.0\MMS-BackEnd.MvcApplicationPartsAssemblyInfo.cs

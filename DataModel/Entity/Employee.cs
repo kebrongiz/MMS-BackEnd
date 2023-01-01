@@ -7,18 +7,15 @@ namespace DataModels.Entity
     {
         [Column("employeeId")]
         public int id { get; set; }
-        public string? fpNumber { get; set; }
-        public string? rank { get; set; }
-        public string? firstName { get; set; }
-        public string? middleName { get; set; }
-        public string? lastName { get; set; }
-        public string? Gender { get; set; }
-        public string? department { get; set; }
-        public DateTimeOffset? Date { get; set; }
-        public virtual MaterialHeader MaterialHeader { get; set; }
+        public string fpNumber { get; set; }
+        public string rank { get; set; }
+        public string firstName { get; set; }
+        public string middleName { get; set; }
+        public string lastName { get; set; }
+        public string gender { get; set; }
+        public string department { get; set; }
+        public DateTimeOffset date { get; set; }
         public virtual ICollection<MaterialItem> MaterialItems { get; set; }
-
-
 
     }
 }

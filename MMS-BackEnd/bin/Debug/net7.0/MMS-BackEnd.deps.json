@@ -9,6 +9,7 @@
       "MMS-BackEnd/1.0.0": {
         "dependencies": {
           "Contracts": "1.0.0",
+          "DataModels": "1.0.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.1",

@@ -3959,6 +3959,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Contracts >= 1.0.0",
+      "DataModels >= 1.0.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.1",
@@ -3996,6 +3997,9 @@
           "projectReferences": {
             "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\Contracts.csproj": {
               "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Contracts\\Contracts.csproj"
+            },
+            "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj": {
+              "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\DataModel\\DataModels.csproj"
             },
             "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Infrastructure\\Infrastructure.csproj": {
               "projectPath": "C:\\Users\\yesuf\\Desktop\\Project\\Backend\\MMS-BackEnd\\Infrastructure\\Infrastructure.csproj"
