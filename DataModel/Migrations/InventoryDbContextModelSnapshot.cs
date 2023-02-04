@@ -144,7 +144,7 @@ namespace DataModels.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("delivererTinNumber")
+                    b.Property<string>("delivererTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -168,7 +168,7 @@ namespace DataModels.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("receiverTinNumber")
+                    b.Property<string>("receiverTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

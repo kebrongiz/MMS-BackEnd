@@ -15,7 +15,7 @@ namespace DataModels.Entity
         public string gender { get; set; }
         public string department { get; set; }
         public DateTimeOffset date { get; set; }
-        public virtual ICollection<MaterialItem> MaterialItems { get; set; }
+        public virtual ICollection<MaterialItem>? MaterialItems { get; set; }
 
     }
 }

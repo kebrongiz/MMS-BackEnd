@@ -117,5 +117,59 @@ namespace MMS_BackEnd.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateEmployee(int id, [FromBody] Employee employee)
+        {
+            try
+            {
+                if (employee == null)
+                {
+                    return BadRequest("employee object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest("Invalid model object");
+                }
+
+                var dbemployee = _employeeService.GetEmployeeById(id);
+                if (dbemployee == null)
+                {
+                    return NotFound();
+                }
+
+                _employeeService.UpdateEmployee(id, employee);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error");
+            }
+        }
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteEmployee(int id)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest("Invalid model object");
+                }
+                var dbemployee = _employeeService.GetEmployeeById(id);
+                if (dbemployee == null)
+                {
+                    return NotFound();
+                }
+
+                _employeeService.DeleteEmployee(id);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }

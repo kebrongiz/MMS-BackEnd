@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MMS_BackEnd.Controllers
 {
-    [Route("api/materialItems")]
+    [Route("api")]
     [ApiController]
     public class MaterialItemsController : ControllerBase
     {
@@ -13,16 +13,57 @@ namespace MMS_BackEnd.Controllers
         {
             _materialItemService = materialItemService;
         }
-        [HttpPost]
-        public int AddInventories(MaterialItem materialItem)
+        [HttpPost("employees/{employeeId}/materialItems")]
+        public IActionResult AddMaterialItems([FromRoute] int employeeId, [FromBody] MaterialItem materialItem)
         {
-            return _materialItemService.Create(materialItem);
+            try
+            {
+                if (materialItem == null)
+                {
+
+                    return BadRequest("materialItem object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    return UnprocessableEntity(ModelState);
+                }
+                var employee = _materialItemService.GetEmployeeById(employeeId);
+                if (employee == null)
+
+                {
+                    return NotFound();
+                }
+
+                _materialItemService.CreateMaterialItemForImployee(employeeId, materialItem);
+                return CreatedAtRoute("GetEmployeeById", new { employeeId, id = materialItem.id });
+
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, "Internal server error");
+            }
         }
         [HttpGet]
-        public List<MaterialItem> GetInventories()
+        public IActionResult GetAllMaterialItems()
         {
-            return _materialItemService.GetAll();
+            try
+            {
+                var materials = _materialItemService.GetAllMaterialItems();
+
+                return Ok(materials);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error");
+            }
         }
+        //[HttpGet("{id}", Name = "GetMaterialItemsForEmployee")]
+        //public IEnumerable<MaterialItem> GetMaterialItemsForEmployee(int employeeId, int id)
+        //{
+        //    return _materialItemService.GetMaterialItemForEmployee(employeeId, id);
+        //}
     }
 }
 

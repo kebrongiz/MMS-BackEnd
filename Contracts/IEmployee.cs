@@ -10,5 +10,7 @@ namespace Contracts
         public IEnumerable<Employee> GetAllEmployees();
         public Employee GetEmployeeById(int id);
         EmployeeExtended GetEmployeeWithDetails(int employeeId);
+        public bool UpdateEmployee(int id, Employee employee);
+        public bool DeleteEmployee(int id);
     }
 }

@@ -4,7 +4,9 @@ namespace Contracts
 {
     public interface IMaterialItem
     {
-        public int Create(MaterialItem materialItem);
-        public List<MaterialItem> GetAll();
+        public int CreateMaterialItemForImployee(int employyeeId, MaterialItem materialItem);
+        public IEnumerable<MaterialItem> GetAllMaterialItems();
+        public Employee GetEmployeeById(int employeeId);
+        public IEnumerable<MaterialItem> GetMaterialItemForEmployee(int empoyeeId, int id);
     }
 }
